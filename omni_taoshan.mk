@@ -29,6 +29,10 @@ PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_MODEL := Xperia L
 
+# Prebuilts
+PRODUCT_COPY_FILES += \
+    device/sony/taoshan/prebuilts/kernel:kernel
+
 # Build fingerprints
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=C2105 \

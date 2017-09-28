@@ -48,8 +48,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom andr
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 
 # Kernel properties
-TARGET_KERNEL_SOURCE := kernel/sony/msm8930
-TARGET_KERNEL_CONFIG := taoshan_defconfig
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 
 # Custom boot
 BOARD_CUSTOM_BOOTIMG := true
